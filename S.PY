@@ -1,21 +1,26 @@
+import json
+
 print("Hello world")
 
 
-class Pessoa: 
-    def __init__(self,nome,sobrenome):
-        self.nome = nome
-        self.sobrenome = sobrenome
+class Cachorro:
+ 
+
+    def __init__(self, nome , idade , raca):
+        self.nome = nome 
+        self.idade = idade
+        self.raca = raca
+
 
     def imprimir(self):
-        print(self.nome , self.sobrenome)
+        print(f"Nome: {self.nome}, Idade: {self.idade}, Raça: {self.raca}")
+
+cachorro1 = Cachorro("bob",14,"Vira-Lata")
+
+cachorro1.imprimir()
+
+dado1=(cachorro1.__dict__)
 
 
-p1 = Pessoa("Dyego","Alves") 
-
-p1.imprimir()
-
-
-
-
-
-
+with open ("S.json","w")as arquivo:
+    json.dump(dado1,arquivo, indent=2)
