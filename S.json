@@ -1,5 +1,12 @@
-{
-  "nome": "bob",
-  "idade": 14,
-  "raca": "Vira-Lata"
-}
+[
+  {
+    "nome": "bob",
+    "idade": 14,
+    "raca": "Vira-Lata"
+  },
+  {
+    "nome": "luiz",
+    "idade": 4,
+    "raca": "shitzu"
+  }
+]
