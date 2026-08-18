@@ -1,3 +1,5 @@
+
+### Treinando 
 passarinhos=[]
 class passaro():
 
@@ -21,7 +23,18 @@ class passaro():
         print(passarinhos)
 
 
+
+    @classmethod ###construtores alternativos
+    def metodo_classes(cls, nome , raca="Anonima" , cor="Anonima" , som = "Fiu"):
+        return cls(nome , raca,cor,som)
+
+
+        
+
+
 papagaio = passaro("loro","papagaios","Azul","pruuuuuu")
 papagaio.fazer_som()
 
+passaro.dados()
+passaro.metodo_classes("Calopsita")
 passaro.dados()
